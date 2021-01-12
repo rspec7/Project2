@@ -16,29 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbE-RK-vCe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbE-RK-vCe">
                                 <rect key="frame" x="107" y="100" width="200" height="100"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idj-hh-2b2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idj-hh-2b2">
                                 <rect key="frame" x="107" y="230" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqg-p2-MXv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqg-p2-MXv">
                                 <rect key="frame" x="107" y="360" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="us"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xbE-RK-vCe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2L1-mB-8Im"/>
+                            <constraint firstItem="Uqg-p2-MXv" firstAttribute="centerX" secondItem="Idj-hh-2b2" secondAttribute="centerX" id="CfC-uO-BXD"/>
+                            <constraint firstItem="Uqg-p2-MXv" firstAttribute="top" secondItem="Idj-hh-2b2" secondAttribute="bottom" constant="30" id="MCO-1o-gIc"/>
+                            <constraint firstItem="Idj-hh-2b2" firstAttribute="top" secondItem="xbE-RK-vCe" secondAttribute="bottom" constant="30" id="atj-Bi-bvj"/>
                             <constraint firstItem="xbE-RK-vCe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="edG-4T-zmf"/>
+                            <constraint firstItem="Idj-hh-2b2" firstAttribute="centerX" secondItem="xbE-RK-vCe" secondAttribute="centerX" id="net-dq-jCu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hj8-2T-yUn"/>
+                    <connections>
+                        <outlet property="button1" destination="xbE-RK-vCe" id="KUW-Fz-jXu"/>
+                        <outlet property="button2" destination="Idj-hh-2b2" id="jAk-3p-e0t"/>
+                        <outlet property="button3" destination="Uqg-p2-MXv" id="tOc-tZ-QQN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,6 +71,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="us" width="200" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
